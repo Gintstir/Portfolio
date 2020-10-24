@@ -1,0 +1,14 @@
+:root {
+    --first-color: #2d3047ff;
+    --second-color: #f5d0c5ff;
+    --third-color: #f7ebe8ff;
+    --fourth-color: #828e82ff;
+    --fifth-color: #75704eff;    
+}
+
+body {
+    color: var(--fourth-color);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Aply styles to header */
