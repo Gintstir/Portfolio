@@ -26,20 +26,21 @@ header {
     flex-wrap: wrap;
     position:  -webkit-sticky;
     position: sticky;
-    top: 0;    
+    top: 0;
+    z-index: 999;    
 }
 
 header h1 {
     font-weight: lighter;
     font-size: 35px;
-    color: var(--fourth-color);
+    color: var(--third-color);
     margin: 0;
     text-shadow: 0 0 15px rgba(225,225,225, 0.5);
     
 }
 header a {
     text-decoration: none;
-    color: var(--fourth-color);
+    color: var(--third-color);
 }
 
 header nav {
@@ -62,12 +63,12 @@ header nav ul li a {
 }
 
 header nav ul li span {
-    border-bottom: 2px solid var(--fourth-color);
+    border-bottom: 2px solid var(--third-color);
     padding-bottom: 1px;
 } 
 
 header nav ul li a:hover {
-    background: var(--fourth-color);
+    background: var(--third-color);
     color: var(--first-color);
     border-radius: 20px;
     text-shadow: none;
@@ -94,3 +95,60 @@ section {
 }
 
 /* header and footer styles end */
+
+/* Hero section styles start */
+
+.hero {
+    background-image: url("../assets/reddoor.jpg");
+    background-size: cover;    
+    background-position: 80%;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    position: relative;
+}
+
+.hero-tagline {       
+    margin: 3.5%;
+    color: var(--third-color);
+    font-size: 25px;
+    line-height: 1.2;
+    display: inline;
+    align-items: normal;
+}
+
+.hero-tagline h2 {
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+  font-size: 25px;
+  animation: fadeIn ease 3s;
+  -webkit-animation: fadeIn ease 3s;
+}
+
+@keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
+}
+
+@-moz-keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
+}
+
+@-webkit-keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
+}
+
+@-o-keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
+}
+
+@-ms-keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
+}
