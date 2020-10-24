@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 :root {
     --first-color: #2d3047ff;
     --second-color: #f5d0c5ff;
@@ -11,4 +17,80 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-/* Aply styles to header */
+/* Apply styles to header and footer */
+header {
+    padding: 15px 25px;
+    background-color: var(--first-color);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position:  -webkit-sticky;
+    position: sticky;
+    top: 0;    
+}
+
+header h1 {
+    font-weight: lighter;
+    font-size: 35px;
+    color: var(--fourth-color);
+    margin: 0;
+    text-shadow: 0 0 15px rgba(225,225,225, 0.5);
+    
+}
+header a {
+    text-decoration: none;
+    color: var(--fourth-color);
+}
+
+header nav {
+    margin: 7px 0;
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+header nav ul li a {
+    padding: 5px 40px;
+    font-weight: lighter;
+    font-size: 1.5vw;
+    text-shadow: 0 0 10px rgba(225,225,225, 0.5);        
+}
+
+header nav ul li span {
+    border-bottom: 2px solid var(--fourth-color);
+    padding-bottom: 1px;
+} 
+
+header nav ul li a:hover {
+    background: var(--fourth-color);
+    color: var(--first-color);
+    border-radius: 20px;
+    text-shadow: none;
+}
+
+footer {
+    background: var(--first-color);
+    width: 100%;
+    padding: 20px 30px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+footer h2 {
+    color: var(--fourth-color);
+    font-size: 20px;
+    margin: 0;
+    font-weight: lighter;
+}
+
+section {
+    padding: 40px;
+}
+
+/* header and footer styles end */
