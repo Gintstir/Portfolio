@@ -161,12 +161,13 @@ section {
     /* general rules for content */
 
 .section-title { 
-    font-size: 60px;
-    margin-left: 10px;
+    font-size: 30px;
+    margin-left: 40px;
     color: var(--first-color);
     font-weight: lighter;
-    text-align: center;
-
+    text-align: right;
+    flex-wrap: wrap;    
+    display: block;    
 }
 
 .intro {
@@ -178,44 +179,47 @@ section {
     width: auto;
     text-align: left;
     display: flex;
-    margin-left: 10%;
+    margin-left: 5%;
     color: var(--third-color);
     font-size: 18px;
-    line-height: 1.2;
-    border-left: 5px solid var(--first-color);
+    line-height: 1.2;    
     padding: 0 10% 0 10%;
 }
 /* content section end */
-
+.flexrow {
+    display: flex;
+}
 /* work section start */
 .work {
     display: flex;
-    background-color: var(--fourth-color)
+    background-color: var(--fourth-color);
+    height: auto;
 }
 .work-grid-wrapper {
-    margin-left: 10%;
+    margin-left: 5%;
     display: flex;
     width: 100%;    
-    justify-content: center;
-    border-left:  5px solid var(--first-color);
+    justify-content: center;        
 }
 
 .work-grid-container {
-    margin: auto;
+    
+    margin: 0 1em 0 0;
+    width: 100%;
     background: var(--fourth-color);    
     display: grid;
     /* repeat(iterator, size) */
-    grid-template-columns: repeat(3, 300px);
-    grid-template-rows: repeat(3, 200px);        
-    column-gap: 15px;
-    row-gap: 15px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 2fr  1fr);;           
+    grid-gap: 1rem;    
     font-size: 1.2rem;
+    padding: 0 10% 0 10%;
 }
 
 .work-grid-item {        
     font-weight: bold;
     padding: 15px 0;
-    border: 2px solid var(--first-color);
+    border: 5px solid var(--first-color);
     display: flex;
     align-items: flex-end;
     justify-content: flex-end;
@@ -235,35 +239,99 @@ section {
     grid-column: 1 / span 2;
     grid-row: 1 / span 2;
     flex-wrap: wrap;  
-    background-image: url(../assets/runbyddy.jpg);
-    color:  
+    background-image: url(../assets/runbyddy.jpg); 
+    position: relative;   
 }
 
 .work-grid-item.Horiseon {
     background-image: url(../assets/01-html-css-git-homework-demo.png);    
-    
+    position: relative;
 }
 
 .work-grid-item.Hello-World {
     background-image: url(../assets/1_KUy_KKExZrSpBuv9XfyBgA.png);    
-    
+    position: relative
 }
 
 .work-grid-item.Calculator {
     background-image: url(../assets/IMG_3863.jpg);
-    
+    position: relative;
 }
 
 .work-grid-item.Calender {
     background-image: url(../assets/bzblog-multiple-calendar-feature.jpg);
+    position: relative;
 }
 
 .work-grid-item.Bookfinder {
-    background-image: url(../assets/readingmountains.jpg);
+    background-image: url(../assets/4eaq9h0hm6u41.jpg);
+    position: relative;
 }
+
+.work-grid-container a.overclick {
+    position: absolute;
+        top: 0; right: 0; bottom: 0; left: 0;
+        opacity: 0;
+        text-indent: -999em;/* to hide its text from humans, but google is still happy */
+        }
+        a.overclick:hover {
+            /* this just lightly fades when you hover, can be excluded */
+            background-color: #fff;
+            opacity: 0.12;
+            }
+
+
 /* work section end */
 
-.contact-me {
+/*contact me sectio start */
+.contactme {
     display: flex;
-    background-color: var(--fourth-color)
+    background-color: var(--fourth-color);
+    height: auto;
+    margin: 0;
+}
+
+#div_contactme_hypers {
+    display: flex;
+    margin-left: 5%;
+    width: 100%;    
+    justify-content: center;           
+}
+
+#ul_contactme_hypers {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    color: var(--third-color);
+    padding: 0 10% 0 10%;    
+}
+
+#ul_contactme_hypers li a {    
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 25px;
+    color: var(--third-color);
+    border-bottom: 4px solid var(--third-color);
+    margin: 4px;
+    padding: 4px;
+    text-decoration: none
+}
+
+
+
+
+/* contact me section end */
+
+.flexrow {
+    display: flex;
+}
+
+/* -----MEDIA QUERIES------ */
+
+
+
+@media only screen and (max-width: 768px) {
+    [class*="col-"] {
+        width:100%
+    }
 }
