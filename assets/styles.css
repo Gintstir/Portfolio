@@ -12,9 +12,9 @@
     --fifth-color: #75704eff;    
 }
 
-body {
-    color: var(--fourth-color);
-    font-family: Arial, Helvetica, sans-serif;
+body {    
+    background-color: var(--fourth-color);
+    font-family: Arial, Helvetica, sans-serif;      
 }
 
 /* Apply styles to header and footer */
@@ -161,17 +161,19 @@ section {
     /* general rules for content */
 
 .section-title { 
-    font-size: 30px;
-    
-    color: var(--first-color);
+    font-size: 55px;
+    margin: auto;
+    padding: 1em;
+    flex-direction: column;    
+    color: var(--third-color);
     font-weight: lighter;
-    text-align: right;
+    text-align: center;
     flex-wrap: wrap;    
     display: flex;    
 }
 
 .intro {    
-    background-color: var(--fourth-color);
+    
     display: flex;
 }
 
@@ -191,7 +193,7 @@ section {
 
 /* work section start */
 .work {    
-    background-color: var(--fourth-color);
+    
     display: flex;    
 }
 .work-grid-wrapper {
@@ -205,11 +207,12 @@ section {
 .work-grid-container {    
     margin: 0 1em 0 0;
     width: 100%;
-    background: var(--fourth-color);    
+    flex-direction: row;
+    flex-wrap: wrap;
     display: grid;
     /* repeat(iterator, size) */
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 2fr  1fr);;           
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+               
     grid-gap: 1rem;    
     font-size: 1.2rem;
     padding: 0 10% 0 10%;
@@ -285,7 +288,7 @@ section {
 
 /*contact me sectio start */
 .contactme {    
-    background-color: var(--fourth-color);
+   
     display: flex;    
 }
 
@@ -298,6 +301,8 @@ section {
 
 #ul_contactme_hypers {
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     width: 100%;
     justify-content: space-around;
     list-style-type: none;
