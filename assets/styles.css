@@ -313,11 +313,11 @@ section {
 #ul_contactme_hypers li a {    
     display: flex;
     flex-wrap: wrap;
-    font-size: 1.2rem;
+    font-size: 25px;
     color: var(--third-color);
-    border-bottom: 4px solid var(--third-color);
+    border-bottom: 4px solid var(--first-color);
     margin: 4px;
-    padding: 4px;
+    padding: 15px;
     text-decoration: none
 }
 
