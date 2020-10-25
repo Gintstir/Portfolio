@@ -162,17 +162,17 @@ section {
 
 .section-title { 
     font-size: 30px;
-    margin-left: 40px;
+    
     color: var(--first-color);
     font-weight: lighter;
     text-align: right;
     flex-wrap: wrap;    
-    display: block;    
+    display: flex;    
 }
 
-.intro {
-    display: flex;
+.intro {    
     background-color: var(--fourth-color);
+    display: flex;
 }
 
 .content-text {
@@ -184,26 +184,25 @@ section {
     font-size: 18px;
     line-height: 1.2;    
     padding: 0 10% 0 10%;
+    border-left: 5px solid var(--first-color);
 }
 /* content section end */
-.flexrow {
-    display: flex;
-}
+
+
 /* work section start */
-.work {
-    display: flex;
+.work {    
     background-color: var(--fourth-color);
-    height: auto;
+    display: flex;    
 }
 .work-grid-wrapper {
     margin-left: 5%;
     display: flex;
     width: 100%;    
-    justify-content: center;        
+    justify-content: center;  
+    border-left: 5px solid var(--first-color);      
 }
 
-.work-grid-container {
-    
+.work-grid-container {    
     margin: 0 1em 0 0;
     width: 100%;
     background: var(--fourth-color);    
@@ -214,6 +213,7 @@ section {
     grid-gap: 1rem;    
     font-size: 1.2rem;
     padding: 0 10% 0 10%;
+    grid-auto-flow: dense;
 }
 
 .work-grid-item {        
@@ -284,32 +284,31 @@ section {
 /* work section end */
 
 /*contact me sectio start */
-.contactme {
-    display: flex;
+.contactme {    
     background-color: var(--fourth-color);
-    height: auto;
-    margin: 0;
+    display: flex;    
 }
 
-#div_contactme_hypers {
-    display: flex;
-    margin-left: 5%;
-    width: 100%;    
-    justify-content: center;           
+
+#div_contactme_hypers {    
+    border-left: 5px solid var(--first-color);
+    padding: 0 10% 0 10%;
+    margin:  0 1em 0 0;               
 }
 
 #ul_contactme_hypers {
     display: flex;
+    width: 100%;
     justify-content: space-around;
     list-style-type: none;
     color: var(--third-color);
-    padding: 0 10% 0 10%;    
+    
 }
 
 #ul_contactme_hypers li a {    
     display: flex;
     flex-wrap: wrap;
-    font-size: 25px;
+    font-size: 1.2rem;
     color: var(--third-color);
     border-bottom: 4px solid var(--third-color);
     margin: 4px;
@@ -329,9 +328,3 @@ section {
 /* -----MEDIA QUERIES------ */
 
 
-
-@media only screen and (max-width: 768px) {
-    [class*="col-"] {
-        width:100%
-    }
-}
