@@ -4,22 +4,26 @@ This is the second weekly challenge for the UPENN LPS Coding bootcamp.  The proj
 
 ## **Link**
 
+A link to the deployed site:
+
 
 
 ## **Motivation**
-
-
-  
+This was the first time building a site from the ground up.  The assignment proved to be very daunting and difficult but provided ample opportunities to learn and grow as a novice web developer.  I look forward to revisiting this project in the future in order to make many improvements as I acquire new skills.  
 
 ## **Build Status**
 
-  
+This is __very__ __much__ a work in progress.  
+
 
 ## **Code Style**
 
-This project used very basic HTML and CSS.  
+This project used basic HTML with some slightly more advanced CSS elements such as CSS Grid, flexbox, transition, and, animation.  
 
 ## **Screenshots**  
+This is a photo of the deployed site:
+
+![Screenshot of website](./assets/screenshotforreadme.png)
 
 ## **Tech Used**
 
@@ -28,6 +32,9 @@ This project used very basic HTML and CSS.
     - [Lighthouse](https://developers.google.com/web/tools/lighthouse/)
     - [Wave](https://wave.webaim.org/)
     - [Carbon](https://carbon.now.sh/)
+    - [GoFullPage](https://gofullpage.com/)
+    - [Coolors](https://coolors.co/)
+
 
 ## **Credits**
 

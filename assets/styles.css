@@ -126,8 +126,9 @@ section {
   bottom: 8px;
   right: 16px;
   font-size: 25px;
-  animation: fadeIn ease 3s;
-  -webkit-animation: fadeIn ease 3s;
+  text-shadow: 0 0 10px rgba(225,225,225, 0.5);
+  animation: fadeIn ease 10s;
+  -webkit-animation: fadeIn ease 10s;
 }
 
 @keyframes fadeIn {
@@ -163,7 +164,7 @@ section {
 .section-title { 
     font-size: 55px;
     margin: auto;
-    padding: 1em;
+    padding: auto;
     flex-direction: column;    
     color: var(--third-color);
     font-weight: lighter;
@@ -235,7 +236,8 @@ section {
     color: var(--third-color);
     font-size: 20px;
     background-color: var(--first-color);
-    background-color: rgba(45, 48, 71, 0.5)
+    background-color: rgba(45, 48, 71, 0.5);
+    z-index: 900;
 }
 
 .work-grid-item.Run-buddy {
@@ -275,12 +277,11 @@ section {
     position: absolute;
         top: 0; right: 0; bottom: 0; left: 0;
         opacity: 0;
-        text-indent: -999em;/* to hide its text from humans, but google is still happy */
+        text-indent: -999em;
         }
-        a.overclick:hover {
-            /* this just lightly fades when you hover, can be excluded */
-            background-color: #fff;
-            opacity: 0.12;
+        a.overclick:hover {            
+            background-color: var(--second-color);
+            opacity: 0.4;
             }
 
 
@@ -304,7 +305,7 @@ section {
     flex-direction: row;
     flex-wrap: wrap;
     width: 100%;
-    justify-content: space-around;
+    justify-content: space-evenly;
     list-style-type: none;
     color: var(--third-color);
     
@@ -317,7 +318,7 @@ section {
     color: var(--third-color);
     border-bottom: 4px solid var(--first-color);
     margin: 4px;
-    padding: 15px;
+    padding: 10px;
     text-decoration: none
 }
 
