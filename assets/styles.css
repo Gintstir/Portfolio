@@ -170,7 +170,7 @@ section {
     font-weight: lighter;
     text-align: center;
     flex-wrap: wrap;    
-    display: flex;    
+    display: flex;        
 }
 
 .intro {    
@@ -380,7 +380,7 @@ section {
     .content-text {
         flex: 100%;
     }
-    
+
     .work-grid-container {
         grid-template-columns: 1fr 1fr;
     }
