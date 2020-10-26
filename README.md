@@ -5,10 +5,10 @@ This is the second weekly challenge for the UPENN LPS Coding bootcamp.  The proj
 ## **Link**
 
 Link to the deployed site:
-> ![Live URL link](https://gintstir.github.io/Portfolio/)
+> [Live URL link](https://gintstir.github.io/Portfolio/)
 
 Link to github repository:
-> ![Link to Github repo](https://github.com/Gintstir/Portfolio)
+> [Link to Github repo](https://github.com/Gintstir/Portfolio)
 
 
 ## **Motivation**
